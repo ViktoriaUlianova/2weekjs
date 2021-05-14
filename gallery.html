@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .btns,
+        .img,
+        .title {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            padding: 10px 35px 10px 35px;
+            margin-top: 1vw;
+        }
+
+        .image {
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">Gallery</h1>
+    <div class="img">
+        <img src="/assets/images/earth.jpg" alt="earth" id="image1">
+    </div>
+    <div class="btns">
+
+        <button type="button" onclick="changeImgBack()" id="buttonBack">Back</button>
+
+        <button type="button" onclick="changeImgNext()" id="buttonNext">Next</button>
+
+        <script src="/assets/js/gallery.js"></script>
+    </div>
+</body>
+
+</html>
